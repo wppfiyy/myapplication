@@ -1,4 +1,4 @@
 package com.example.myapplication.base;
 
-public class BseView {
+public interface BseView {
 }
