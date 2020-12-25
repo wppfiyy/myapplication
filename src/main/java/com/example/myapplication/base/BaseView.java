@@ -1,4 +1,4 @@
 package com.example.myapplication.base;
 
-public interface BseView {
+public interface BaseView {
 }
