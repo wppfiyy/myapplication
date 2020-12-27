@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:background="@color/white"
+            android:layout_marginLeft="50dp"
+            android:layout_width="40dp"
+            android:layout_height="30dp"/>
+
+        <EditText
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_tv"
+            android:hint="商品搜索,共239款好物"/>
+    </LinearLayout>
+
+</LinearLayout>

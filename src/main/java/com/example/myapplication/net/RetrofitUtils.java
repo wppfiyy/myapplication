@@ -56,19 +56,15 @@ public class RetrofitUtils implements NetWork{
                         try {
                             String string = responseBody.string();
                             Type[] genericInterfaces = callBack.getClass().getGenericInterfaces();
-                            Type[] typeArguments = ((ParameterizedType) genericInterfaces[0]).getActualTypeArguments();
-                            Type typeArgument = typeArguments[0];
+                            Type[] actualTypeArguments = ((ParameterizedType) genericInterfaces[0]).getActualTypeArguments();
+                            Type actualTypeArgument = actualTypeArguments[0];
                             Gson gson = new Gson();
-                            gson.fromJson(string,typeArgument);
-                            T result = gson.fromJson(string, typeArgument);
+                            T result = gson.fromJson(string, actualTypeArgument);
                             callBack.onSuccess(result);
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
-
-
                     }
-
                     @Override
                     public void onError(@NonNull Throwable e) {
 

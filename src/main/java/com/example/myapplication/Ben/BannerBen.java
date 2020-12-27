@@ -382,7 +382,7 @@ public class BannerBen {
             private String pic_url;
             private Integer sort_order;
             private Integer is_show;
-            private Integer floor_price;
+            private String floor_price;
             private String app_list_pic_url;
             private Integer is_new;
             private String new_pic_url;
@@ -444,11 +444,11 @@ public class BannerBen {
                 this.is_show = is_show;
             }
 
-            public Integer getFloor_price() {
+            public String getFloor_price() {
                 return floor_price;
             }
 
-            public void setFloor_price(Integer floor_price) {
+            public void setFloor_price(String floor_price) {
                 this.floor_price = floor_price;
             }
 
@@ -516,7 +516,7 @@ public class BannerBen {
             private String item_pic_url;
             private String subtitle;
             private Integer topic_category_id;
-            private Integer price_info;
+            private String price_info;
             private String read_count;
             private String scene_pic_url;
             private Integer topic_template_id;
@@ -580,11 +580,11 @@ public class BannerBen {
                 this.topic_category_id = topic_category_id;
             }
 
-            public Integer getPrice_info() {
+            public String getPrice_info() {
                 return price_info;
             }
 
-            public void setPrice_info(Integer price_info) {
+            public void setPrice_info(String price_info) {
                 this.price_info = price_info;
             }
 
@@ -683,7 +683,7 @@ public class BannerBen {
                 private Integer id;
                 private String name;
                 private String list_pic_url;
-                private Integer retail_price;
+                private String retail_price;
 
                 public Integer getId() {
                     return id;
@@ -709,11 +709,11 @@ public class BannerBen {
                     this.list_pic_url = list_pic_url;
                 }
 
-                public Integer getRetail_price() {
+                public String getRetail_price() {
                     return retail_price;
                 }
 
-                public void setRetail_price(Integer retail_price) {
+                public void setRetail_price(String retail_price) {
                     this.retail_price = retail_price;
                 }
             }

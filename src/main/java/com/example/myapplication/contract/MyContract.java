@@ -12,10 +12,12 @@ public class MyContract {
     }
 
     public interface IMainPresenter{
+
         void fun();
     }
 
     public interface IMainModel extends BaseModel {
-       <T> void getData(CallBackInterface<T> callback);
+
+        <T>void getLogin(String newlist, CallBackInterface<T> callBackInterface);
     }
 }
