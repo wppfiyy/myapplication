@@ -13,8 +13,8 @@
             android:background="@color/white"
             android:layout_marginLeft="50dp"
             android:layout_width="40dp"
-            android:layout_height="30dp"/>
-
+            android:layout_height="30dp"
+            android:src="@drawable/a"/>
         <EditText
             android:layout_marginTop="1dp"
             android:background="@color/white"
@@ -23,5 +23,4 @@
             android:id="@+id/ed_tv"
             android:hint="商品搜索,共239款好物"/>
     </LinearLayout>
-
 </LinearLayout>

@@ -17,6 +17,10 @@ public class SingleAdapter extends DelegateAdapter.Adapter {
 
     private SingleLayoutHelper singleLayoutHelper;
 
+    public SingleAdapter(SingleLayoutHelper singleLayoutHelper) {
+        this.singleLayoutHelper = singleLayoutHelper;
+    }
+
     @Override
     public LayoutHelper onCreateLayoutHelper() {
         return singleLayoutHelper;

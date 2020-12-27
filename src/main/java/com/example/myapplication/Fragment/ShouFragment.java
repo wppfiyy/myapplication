@@ -81,18 +81,18 @@ public class ShouFragment extends BaseFragment<MyPresenter> implements MyContrac
         mRecycler.setRecycledViewPool(pool);
         pool.setMaxRecycledViews(0,10);
 
-//        //第一行
-//        SingleLayoutHelper singleLayoutHelper = new SingleLayoutHelper();
-//        singleLayoutHelper.setItemCount(1);// 设置布局里Item个数
-//        singleLayoutHelper.setPadding(20, 20, 20, 20);// 设置LayoutHelper的子元素相对LayoutHelper边缘的距离
-//        singleLayoutHelper.setMargin(20, 20, 20, 20);// 设置LayoutHelper边缘相对父控件（即RecyclerView）的距离
-//        //singleLayoutHelper.setBgColor(Color.GRAY);// 设置背景颜色
-//        singleLayoutHelper.setAspectRatio(12);// 设置设置布局内每行布局的宽与高的比
-//
-//
-//        SingleAdapter singleAdapter = new SingleAdapter(singleLayoutHelper);
 
 
+
+//第一行
+        SingleLayoutHelper singleLayoutHelper = new SingleLayoutHelper();
+        singleLayoutHelper.setItemCount(1);// 设置布局里Item个数
+        singleLayoutHelper.setPadding(20, 20, 20, 20);// 设置LayoutHelper的子元素相对LayoutHelper边缘的距离
+        singleLayoutHelper.setMargin(20, 20, 20, 20);// 设置LayoutHelper边缘相对父控件（即RecyclerView）的距离
+        //singleLayoutHelper.setBgColor(Color.GRAY);// 设置背景颜色
+        singleLayoutHelper.setAspectRatio(12);// 设置设置布局内每行布局的宽与高的比
+        //第一行适配器
+        SingleAdapter singleAdapter = new SingleAdapter(singleLayoutHelper);
 
 
         //第二行
@@ -175,14 +175,14 @@ public class ShouFragment extends BaseFragment<MyPresenter> implements MyContrac
 
         //设置适配器
         delegateAdapter = new DelegateAdapter(virtualLayoutManager, false);
-//        delegateAdapter.addAdapter(singleAdapter);
+        delegateAdapter.addAdapter(singleAdapter);
         delegateAdapter.addAdapter(singleTwoAdapter);
         delegateAdapter.addAdapter(singleThreeAdapter);
         delegateAdapter.addAdapter(singleFourAdapter);
         delegateAdapter.addAdapter(gridLayoutAdapter);
         delegateAdapter.addAdapter(singleSixAdapter);
         delegateAdapter.addAdapter(gridLayoutSixAdapter);
-//        delegateAdapter.addAdapter(initTitle("专题精选"));
+        delegateAdapter.addAdapter(initTitle("专题精选"));
         mRecycler.setLayoutManager(virtualLayoutManager);
         mRecycler.setAdapter(delegateAdapter);
     }

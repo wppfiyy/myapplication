@@ -13,6 +13,7 @@ import com.alibaba.android.vlayout.LayoutHelper;
 import com.alibaba.android.vlayout.layout.SingleLayoutHelper;
 import com.example.myapplication.R;
 
+
 public class SingleAdapter extends DelegateAdapter.Adapter{
 
     private SingleLayoutHelper singleLayoutHelper;
