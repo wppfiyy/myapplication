@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_height="170dp" android:layout_width="match_parent" app:layout_constraintTop_toTopOf="parent"  android:scaleType="centerCrop" android:id="@+id/iv_topic_home"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tv_topictitle_home" app:layout_constraintTop_toBottomOf="@id/iv_topic_home" app:layout_constraintLeft_toLeftOf="@id/iv_topic_home" android:textSize="17dp" android:textColor="@color/black" android:text="测试一下标题" android:layout_marginTop="17dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="@id/tv_topictitle_home" android:id="@+id/tv_topicprice_home" android:textSize="17dp" android:textColor="#FF0000" android:text="测试一下价格" app:layout_constraintLeft_toRightOf="@id/tv_topictitle_home" app:layout_constraintBottom_toBottomOf="@id/tv_topictitle_home" android:layout_marginLeft="17dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tv_topicintro_home" app:layout_constraintTop_toBottomOf="@id/tv_topictitle_home" app:layout_constraintLeft_toLeftOf="@id/tv_topictitle_home" android:text="测试一下介绍" android:layout_marginTop="7dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
